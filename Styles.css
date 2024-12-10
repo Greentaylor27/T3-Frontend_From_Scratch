@@ -15,7 +15,7 @@ footer {
     color: #006100;
 }
 
-.hero-section, main {
+.hero-section {
     background-color: #F9F6EE;
 }
 
@@ -29,4 +29,18 @@ footer {
     text-shadow: 3px 3px 15px #808080 !important;
 }
 
+.president-quote {
+    background-color: #f0ead6;
+}
 
+.president-black {
+    text-shadow: 3px 3px 8px #404040
+}
+
+.president-card {
+    max-height: 540px;
+}
+
+.headshot {
+    aspect-ratio: 4 / 3;
+}
