@@ -29,10 +29,6 @@ footer {
     text-shadow: 3px 3px 15px #808080 !important;
 }
 
-.president-quote {
-    background-color: #f0ead6;
-}
-
 .president-black {
     text-shadow: 3px 3px 8px #404040
 }
@@ -42,5 +38,6 @@ footer {
 }
 
 .headshot {
-    aspect-ratio: 4 / 3;
+    max-height: 540px;
+    aspect-ratio: 1/1;
 }
