@@ -8,6 +8,10 @@ $(document).ready(() => {
     $('.asoif-quotes').hide();
     //$('.chuck-norris').hide();
 
+    const updatedAt = $('.updated-at');
+    let today = new Date();
+    updatedAt.append(today.toDateString());
+
     function getChuckQuote() {
         $('.chuck-norris').show();
         $('#chuck-norris-loader').hide();
@@ -19,7 +23,6 @@ $(document).ready(() => {
                 const punchline = joke.value;
 
                 $('.chuck-norris > .card > .row > .col-lg-9 > .card-body > .card-text').append(punchline);
-                $('.chuck-norris > .card > .row > .col-lg-9 > .card-body > .card-subtitle').append(joke.updated_at)
             },
             error: (error) => {
                 console.log(error);
@@ -34,20 +37,38 @@ $(document).ready(() => {
         $('#asoif-loader').hide();
 
         $.ajax({
-            url: 'https://api.gameofthronesquotes.xyz/v1/random',
+            url: 'https://thronesapi.com/api/v2/Characters',
             type: 'GET',
             success: (data) => {
-                const character = data.character;
-                const sentence = data.sentence;
-                let Date = 
+                const characters = Object.keys(data);
+                const randomCharacter = Math.floor(Math.random() * characters.length);
+                const characterName = data[randomCharacter].fullName;
 
-                console.log(sentence);
-                console.log(character);
-                console.log(data);
+                const nameArr = characterName.toLowerCase().split(" ");
+                const firstName = nameArr[0];
 
-                $('#asoif-quotes').append(sentence);
-                $('#asoif-character').append(character.name);
-                $('')
+                for (let i = 0; i < characters.length; i++) {
+                    if (data[i].id === randomCharacter) {
+                        $('#asoif-character').append(`${data[i].fullName}, ${data[i].title}`);
+                        $('#asoif-character-pic').attr('src', data[i].imageUrl);
+                    }
+                }
+
+                $.ajax({
+                    url: `https://api.gameofthronesquotes.xyz/v1/author/${firstName}`,
+                    type: 'GET',
+                    success: (element) => {
+                        if (element) {
+                            $('#asoif-quotes').empty();
+                            $('#asoif-quotes').append(element.sentence);
+                        }
+                    },
+                    error: (error) => {
+                        console.error('Error: ' + error);
+                        alert('Error: ' + error);
+                    }
+                });
+
             },
             error: (error) => {
                 console.error('Error: ' + error);
@@ -55,7 +76,6 @@ $(document).ready(() => {
             }
         });
     }
-
     getChuckQuote();
     getASOIF();
 });
