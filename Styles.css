@@ -128,3 +128,7 @@ footer {
     width: 75vw;
 }
 
+.random-quote-pic {
+    max-width: 450px !important;
+    max-height: 450px !important;
+}
