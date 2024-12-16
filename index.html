@@ -41,16 +41,6 @@
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous">
-
-        <!-- Slick Slider -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
         
         <!-- JQuery -->
         <script
@@ -96,7 +86,8 @@
                                 <a href="#" class="nav-link active dropdown-toggle navbarColor" role="button" data-bs-toggle="dropdown" aria-expanded="false">Films</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="random-quotes.html" class="dropdown-item">Random Quotes</a></li>
-                                    <li><a href="#" class="dropdown-item disabled">Short Films</a></li>
+                                    <!-- Was going to add this page but the api required a key -->
+                                    <li><a href="#" class="dropdown-item disabled">Random Anime Fact</a></li> 
                                     <li><a href="#" class="dropdown-item disabled">Documentaries</a></li>
                                     <li><a href="#" class="dropdown-item disabled">Coming Soon!!</a></li>
                                 </ul>
@@ -113,31 +104,31 @@
             </nav>
             <div class="container-fluid hero-section poster-container">
                 <div class="card border-0">
-                    <img src="Images/moviePoster1.webp" height="800" alt="movie poster" class="movie-poster-1">
+                    <img src="Images/moviePoster1.webp" height="800" alt="movie poster" class="movie-poster">
                     <div class="card-img-overlay d-flex justify-content-center align-items-center coming-soon">
-                        <img src="Images/pngfind.com-coming-soon-png-565758.png" height="600px" alt="Coming Soon">
+                        <img src="Images/pngfind.com-coming-soon-png-565758.png" alt="Coming Soon" id="comingSoon">
                     </div>
                 </div>
             </div>
         </head>
         <main class="bgeggshell">
-            <div class="card-group m-2 p-1">
+            <div class="card-group m-2 p-1 d-flex ">
                 <div class="card card-hero border-0">
-                    <img src="Images/herocard1.png" class="img-fluid hero-card-img" alt="Hero Card 1">
+                    <img src="Images/herocard1.png" class="img-fluid hero-card-img" alt="Get to Know us">
                     <div class="card-img-overlay d-flex justify-content-center align-content-center align-items-center flex-wrap text-wrapper">
                         <h5 class="card-title text-center hero-text">Get to know us</h5>
                         <p class="card-text text-center hero-text">Ever wanted to meet an animator and have all you questions answered? Come meet some of the talent that has worked on some of  our project</p>
                     </div>
                 </div>
                 <div class="card card-hero border-0">
-                    <img src="Images/herocard2.png" class="img-fluid hero-card-img" alt="Hero Card 2">
+                    <img src="Images/herocard2.png" class="img-fluid hero-card-img" alt="City Skyline">
                     <div class="card-img-overlay d-flex flex-wrap justify-content-center align-items-center align-content-center text-wrapper">
                         <h5 class="card-title hero-text text-center">See Where we Work</h5>
                         <p class="card-text text-center hero-text">Come take a Virtual tour of one of our many studios (see our new Tulsa location)</p>
                     </div>
                 </div>
                 <div class="card card-hero border-0">
-                    <img src="Images/herocard3.png" class="img-fluid hero-card-img" alt="Hero Card 3">
+                    <img src="Images/herocard3.png" class="img-fluid hero-card-img" alt="Business meeting">
                     <div class="card-img-overlay d-flex flex-wrap justify-content-center align-items-center align-content-center text-wrapper">
                         <h5 class="card-title hero-text text-center">Internship Program</h5>
                         <p class="card-text text-center hero-text">Ever wanted to see your art come to life? Come join our innovating intership program and transform your artistic dream into a dream career here!</p>
@@ -188,28 +179,28 @@
             <p class="fs-6">Crafted with passion and creativity</p>
             <p class="fw-semibold"><small>follow us:</small></p>
             <div class="d-flex flex-row my-2 justify-content-center">
-                <button class="btn d-flex justify-content-center m-3 p-2" type="button">
-                    <a href="https://www.linkedin.com/in/greentaylor27/">
+                <button class="btn d-flex justify-content-center m-2 p-2" type="button">
+                    <a href="https://www.linkedin.com/in/greentaylor27/" class="my-3 p-2">
                         <img src="Images/linkedin.svg" alt="LinkedIn" height="32" width="32">
                     </a>
                 </button>
-                <button class="btn d-flex justify-content-center m-3 p-2" type="button">
-                    <a href="#">
+                <button class="btn d-flex justify-content-center m-2 p-2" type="button">
+                    <a href="#" class="my-3 p-2">
                         <img src="Images/facebook.svg" alt="Facebook" height="32" width="32">
                     </a>
                 </button>
-                <button class="btn d-flex justify-content-center m-3 p-2" type="button">
-                    <a href="#">
+                <button class="btn d-flex justify-content-center m-2 p-2" type="button">
+                    <a href="#" class="my-3 p-2">
                         <img src="Images/twitter-x.svg" alt="Twitter" height="32" width="32">
                     </a>
                 </button>
-                <button class="btn d-flex justify-content-center m-3 p-2" type="button">
-                    <a href="#">
+                <button class="btn d-flex justify-content-center m-2 p-2" type="button">
+                    <a href="#" class="my-3 p-2">
                         <img src="Images/youtube.svg" alt="Youtube" height="32" width="32">
                     </a>
                 </button>
-                <button class="btn d-flex justify-content-center m-3 p-2" type="button">
-                    <a href="#">
+                <button class="btn d-flex justify-content-center m-2 p-2" type="button">
+                    <a href="#" class="my-3 p-2">
                         <img src="Images/instagram.svg" alt="Instagram" height="32" width="32">
                     </a>
                 </button>

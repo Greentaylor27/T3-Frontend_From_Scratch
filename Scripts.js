@@ -182,10 +182,6 @@ $(document).ready(() => {
         });
     }
 
-    function getStrangerThing() {
-        
-    }
-
     getChuckQuote();
     getASOIF();
     getHP();

@@ -46,7 +46,7 @@ footer {
     width: 50%;
 }
 
-.movie-poster-1 {
+.movie-poster {
     opacity: 1;
     display: block;
     width: 100%;
@@ -65,7 +65,7 @@ footer {
     -ms-transform: translate(-50% -50%);
 }
 
-.poster-container:hover .movie-poster-1 {
+.poster-container:hover .movie-poster {
     filter: blur(1.5rem);
 }
 
@@ -131,4 +131,9 @@ footer {
 .random-quote-pic {
     max-width: 450px !important;
     max-height: 450px !important;
+}
+
+#comingSoon {
+    max-width: 85%;
+    height: auto;
 }
