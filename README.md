@@ -1,4 +1,3 @@
-
 ## Site URL
 
 https://greentaylor27.github.io/T3-Frontend_From_Scratch/
@@ -13,6 +12,7 @@ Build a fully functional and user-friendly frontend website using the skills and
 - Utilizing a third-party API
 - SEO
 - Accessibility
+
 ## Acknowledgements
 
  - [Andy Boen](https://github.com/andyboen) For challenging me to try different things and guiding me to make this a stellar portfolio piece
@@ -23,7 +23,6 @@ Build a fully functional and user-friendly frontend website using the skills and
 ## Authors
 
 - [Taylor Green](https://github.com/Greentaylor27)
-
 
 ## Screenshots
 
